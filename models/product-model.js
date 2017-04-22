@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Shema;
+const Schema = mongoose.Schema;
 
-const productShema = new Schema({
+const productSchema = new Schema({
   name: { type: String, },
   price: { type: Number, default: 0 },
   imageUrl: { type: String, default: 'https://ouwebs.com/wp-content/uploads/2016/11/ouwebs-logo-1.png' },
   description: { type: String, },
 });
 
-const Product = mongoose.model('Product', productShema);
+const Product = mongoose.model('Product', productSchema);
 
-module.export = Product;
+module.exports = Product;
