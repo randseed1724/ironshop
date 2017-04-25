@@ -2,6 +2,7 @@ const express = require('express');
 
 const Product = require('../models/product-model.js');
 
+
 const productRoutes = express.Router();
 
 
@@ -11,8 +12,6 @@ productRoutes.get('/products', (req, res, next) => {
       next(err);
       return;
     }
-
-    
   res.render('products/products-list-view.ejs', {
    products: productList,
    });
