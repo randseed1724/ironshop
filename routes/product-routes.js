@@ -12,13 +12,15 @@ productRoutes.get('/products', (req, res, next) => {
       return;
     }
 
-    
+
   res.render('products/products-list-view.ejs', {
    products: productList,
    });
   });
 });
 
-
+productRoutes.get('/products/new', (req, res, next) => {
+  res.render('prducts.new-product.ejs');
+});
 
 module.exports = productRoutes;

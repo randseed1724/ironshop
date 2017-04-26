@@ -1,18 +1,6 @@
-<h2> Product List </h2>
-
-<ul>
-  <% products.forEach((oneProduct) => { %>
-<li>
-  <%=oneProduct.name %> - $<%= oneProduct.price %>
-</li>
- <%  }) %>
-</ul>
-
-<a href="/prudcts/new">
-  <pre>
+<h2>
   Add a Product
-  </pre>
-</a>
+</h2>
 
 <form method="post" action="/products/new">
   <label for="product-name-input">Prodcut Name </label>
@@ -28,5 +16,5 @@
 <textarea id="product-description-input" name="productDescription" /></textarea>
 <br/>
 
-<button>Add new Product</buttton>
+<input value="Add new Product"/>
 </form>
